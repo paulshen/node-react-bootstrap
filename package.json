@@ -1,0 +1,24 @@
+{
+  "name": "node-react-bootstrap",
+  "version": "0.1.0",
+  "description": "Starter application for expressjs, react, requirejs",
+  "author": {
+    "name": "Paul Shen",
+    "url": "http://github.com/paulshen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paulshen/node-react-bootstrap.git"
+  },
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "4.x",
+    "ejs": "1.x"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT"
+}
