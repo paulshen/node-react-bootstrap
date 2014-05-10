@@ -8,6 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/normalize.css">
+
+<% if (typeof requireMain !== 'undefined') { %>
+<% if (typeof requireConfig !== 'undefined') { %>
+<script>
+var require = { config: <%- JSON.stringify(requireConfig) %> };
+</script>
+<% } %>
+    <script data-main="<%- requireMain %>" src="js/vendor/require.js"></script>
+<% } %>
   </head>
   <body>
     <!--[if lt IE 8]>
