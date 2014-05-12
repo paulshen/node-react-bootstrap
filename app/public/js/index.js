@@ -1,10 +1,8 @@
-require.config({
-  baseUrl: 'js',
-  paths: {
-    'react': 'vendor/react-0.10.0.min'
-  }
-});
+/** @jsx React.DOM */
+var React = require('React');
+var IndexPage = require('IndexPage');
 
-define(['module', 'react'], function(module, React) {
-  console.log(module.config(), React, 'hi!');
-});
+React.renderComponent(
+  IndexPage(null ),
+  document.getElementById('container')
+);

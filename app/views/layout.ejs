@@ -9,14 +9,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
 
-<% if (typeof requireMain !== 'undefined') { %>
-<% if (typeof requireConfig !== 'undefined') { %>
-<script>
-var require = { config: <%- JSON.stringify(requireConfig) %> };
-</script>
-<% } %>
-    <script data-main="<%- requireMain %>" src="js/vendor/require.js"></script>
-<% } %>
+    <script src="js/package.js"></script>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -25,5 +18,11 @@ var require = { config: <%- JSON.stringify(requireConfig) %> };
 
 <%-body%>
 
+<% if (typeof jsBootstrap !== 'undefined') { %>
+    <script>window.Bootstrap = <%-JSON.stringify(jsBootstrap)%>;</script>
+<% } %>
+<% if (typeof jsMain !== 'undefined') { %>
+    <script src="<%- jsMain %>"></script>
+<% } %>
   </body>
 </html>
