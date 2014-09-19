@@ -11,28 +11,20 @@
     "url": "git://github.com/paulshen/node-react-bootstrap.git"
   },
   "scripts": {
+    "build": "webpack --progress --colors",
+    "watch": "webpack --progress --colors --watch",
     "start": "node app/server.js"
-  },
-  "browserify-shim": {
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
   },
   "dependencies": {
     "express": "4.x",
-    "ejs": "1.x",
     "express-ejs-layouts": "0.3.x",
-    "react": "0.10.x"
+    "ejs": "1.x",
+    "react": "0.11.x"
   },
   "devDependencies": {
-    "browserify": "~4.1.5",
-    "browserify-shim": "~3.5.0",
-    "grunt": "~0.4.5",
-    "grunt-react": "~0.8.2",
-    "grunt-browserify": "~2.1.0",
-    "grunt-contrib-watch": "~0.6.1"
+    "exports-loader": "^0.6.2",
+    "jsx-loader": "^0.11.0",
+    "webpack": "^1.4.0-beta9"
   },
   "engines": {
     "node": ">=0.10.0"

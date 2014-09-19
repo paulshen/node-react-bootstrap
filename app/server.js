@@ -8,7 +8,7 @@ app.use(expressLayouts);
 
 app.get('/', function(req, res) {
   res.render('index', {
-    jsMain: 'js/package.js',
+    jsMain: 'js/index.bundle.js',
     jsBootstrap: {'index': {'foo': 'bar'}}
   });
 });
