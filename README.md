@@ -1,11 +1,9 @@
 node-react-bootstrap
 ====================
 
-```
-grunt watch
-```
 
 ```
 npm install
+npm run build (or npm run watch)
 npm start
 ```
