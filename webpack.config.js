@@ -11,7 +11,8 @@ module.exports = {
   module: {
     loaders: [
       {test: /\.js$/, loader: 'jsx-loader'},
-      {test: /zepto[a-z.]*.js/, loader: 'exports-loader?Zepto'}
+      {test: /zepto[a-z.]*.js/, loader: 'exports-loader?Zepto'},
+      {test: require.resolve('React'), loader: 'expose?React' }
     ]
   },
   resolve: {
