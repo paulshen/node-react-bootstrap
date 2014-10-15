@@ -1,3 +1,4 @@
 .lock.pid
 .module-cache/
 .bin/
+app/public/js/
