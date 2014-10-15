@@ -24,6 +24,8 @@
   "devDependencies": {
     "exports-loader": "^0.6.2",
     "expose-loader": "^0.5.3",
+    "gulp": "^3.8.8",
+    "gulp-util": "^3.0.1",
     "jsx-loader": "^0.11.0",
     "webpack": "^1.4.0-beta9"
   },
