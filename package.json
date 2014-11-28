@@ -13,7 +13,8 @@
   "scripts": {
     "build": "webpack --progress --colors",
     "watch": "webpack --progress --colors --watch",
-    "start": "node app/server.js"
+    "start": "node app/server.js",
+    "nodemon": "nodemon --watch app --ignore app/client_src --ignore app/public app/server.js"
   },
   "dependencies": {
     "express": "4.x",
