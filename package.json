@@ -28,7 +28,8 @@
     "gulp": "^3.8.8",
     "gulp-util": "^3.0.1",
     "jsx-loader": "^0.11.0",
-    "webpack": "^1.4.0-beta9"
+    "webpack": "^1.4.0-beta9",
+    "webpack-dev-server": "^1.6.6"
   },
   "engines": {
     "node": ">=0.10.0"

@@ -6,9 +6,16 @@ app.set('views', process.cwd() + '/app/views');
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 
+function getJsPath(path) {
+  if (process.env.NODE_ENV !== 'production') {
+    return 'http://localhost:8090/js/' + path;
+  }
+  return '/js/' + path;
+}
+
 app.get('/', function(req, res) {
   res.render('index', {
-    jsMain: 'js/index.bundle.js',
+    jsMain: getJsPath('index.bundle.js'),
     jsBootstrap: {'index': {'foo': 'bar'}}
   });
 });

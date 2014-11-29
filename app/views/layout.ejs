@@ -9,6 +9,10 @@
 
     <link rel="stylesheet" href="css/normalize.css">
 
+<% if (process.env.NODE_ENV !== 'production') { %>
+    <script src="http://localhost:8090/webpack-dev-server.js"></script>
+<% } %>
+
   </head>
   <body>
     <!--[if lt IE 8]>
