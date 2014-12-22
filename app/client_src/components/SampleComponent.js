@@ -1,5 +1,3 @@
-/** @jsx React.DOM */
-
 var React = require('React');
 
 var SampleComponent = React.createClass({

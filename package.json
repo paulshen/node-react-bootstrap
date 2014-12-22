@@ -20,14 +20,14 @@
     "express": "4.x",
     "express-ejs-layouts": "0.3.x",
     "ejs": "1.x",
-    "react": "0.11.x"
+    "react": "0.12.x"
   },
   "devDependencies": {
     "exports-loader": "^0.6.2",
     "expose-loader": "^0.5.3",
     "gulp": "^3.8.8",
     "gulp-util": "^3.0.1",
-    "jsx-loader": "^0.11.0",
+    "jsx-loader": "^0.12.0",
     "webpack": "^1.4.0-beta9",
     "webpack-dev-server": "^1.6.6"
   },
