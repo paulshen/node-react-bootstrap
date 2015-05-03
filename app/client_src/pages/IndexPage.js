@@ -1,5 +1,5 @@
-var React = require('React');
-var SampleComponent = require('components/SampleComponent.js');
+var React = require('react');
+var SampleComponent = require('components/SampleComponent');
 
 var IndexPage = React.createClass({
   render: function() {

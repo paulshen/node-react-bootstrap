@@ -12,7 +12,7 @@ module.exports = {
     loaders: [
       {test: /\.js$/, loader: 'jsx-loader?harmony'},
       {test: /zepto[a-z.]*.js/, loader: 'exports-loader?Zepto'},
-      {test: require.resolve('React'), loader: 'expose?React' }
+      {test: require.resolve('react'), loader: 'expose?React' }
     ]
   },
   resolve: {
