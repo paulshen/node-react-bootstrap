@@ -28,6 +28,7 @@
     "gulp": "^3.8.11",
     "gulp-util": "^3.0.1",
     "jsx-loader": "^0.13",
+    "react-router": "^0.13.3",
     "webpack": "^1.8.10",
     "webpack-dev-server": "^1.6.6"
   },
