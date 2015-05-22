@@ -2,3 +2,4 @@
 .module-cache/
 .bin/
 app/public/js/
+node_modules/
