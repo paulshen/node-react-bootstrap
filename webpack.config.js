@@ -1,3 +1,5 @@
+require('babel-loader');
+
 module.exports = {
   entry: {
     app: 'App'
@@ -10,7 +12,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'jsx-loader?harmony'},
+      {test: /\.js$/, loader: 'babel'},
       {test: /zepto[a-z.]*.js/, loader: 'exports-loader?Zepto'},
       {test: require.resolve('react'), loader: 'expose?React' }
     ]
