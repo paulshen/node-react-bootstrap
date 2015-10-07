@@ -27,6 +27,5 @@ ReactRouter.run(routes, ReactRouter.HistoryLocation, function (Root) {
   React.render(<Root />, document.getElementById('container'));
 });
 
-// How to use zepto
-var $ = require('zepto');
+var $ = require('jquery');
 console.log($);

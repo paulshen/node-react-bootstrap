@@ -50,7 +50,8 @@ gulp.task("webpack:dev-server", function(callback) {
 	new WebpackDevServer(webpack(myDevConfig), {
 		publicPath: myDevConfig.output.publicPath,
 		stats: {
-      colors: true
+      colors: true,
+      chunkModules: false
     }
 	}).listen(8090, "localhost", function(err) {
 		if(err) throw new gutil.PluginError("webpack-dev-server", err);

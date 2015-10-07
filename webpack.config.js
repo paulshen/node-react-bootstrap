@@ -12,14 +12,19 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'babel'},
-      {test: /zepto[a-z.]*.js/, loader: 'exports-loader?Zepto'},
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        exclude: /(node_modules|bower_components)/,
+        query: {
+          stage: 0
+        }
+      },
       {test: require.resolve('react'), loader: 'expose?React' }
     ]
   },
   resolve: {
     alias: {
-      zepto$: 'vendor/zepto.min.js'
     },
     root: [__dirname + '/app/client_src']
   }
