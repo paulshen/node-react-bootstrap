@@ -1,31 +1,35 @@
-var React = require('react');
-var ReactRouter = require('react-router');
-var IndexPage = require('pages/IndexPage');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router, Route, IndexRoute, DefaultRoute } from 'react-router';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
+import useScroll from 'scroll-behavior/lib/useStandardScroll';
 
-var Route = ReactRouter.Route;
-var RouteHandler = ReactRouter.RouteHandler;
-var DefaultRoute = ReactRouter.DefaultRoute;
+var IndexPage = require('pages/IndexPage');
 
 var App = React.createClass({
   render: function() {
     return (
       <div>
-        <RouteHandler />
+        {this.props.children}
       </div>
     );
   }
 });
 
-var routes = (
-  <Route path="/" handler={App}>
-    <DefaultRoute handler={IndexPage} />
-    <Route path="t/:id" handler={IndexPage} />
+var Routes = (
+  <Route path="/" component={App}>
+    <Route path="t/:id" component={IndexPage} />
+    <IndexRoute component={IndexPage} />
+    <Route path="*" component={IndexPage} />
   </Route>
 );
 
-ReactRouter.run(routes, ReactRouter.HistoryLocation, function (Root) {
-  React.render(<Root />, document.getElementById('container'));
-});
+let history = useScroll(createBrowserHistory)();
+
+ReactDOM.render(
+  <Router routes={Routes} history={history} />,
+  document.getElementById('container')
+);
 
 var $ = require('jquery');
 console.log($);
