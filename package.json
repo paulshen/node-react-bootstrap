@@ -21,10 +21,12 @@
     "express": "4.x"
   },
   "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
     "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.1",
     "exports-loader": "^0.6.2",
     "expose-loader": "^0.5.3",
     "gulp": "^3.9.0",
@@ -33,6 +35,7 @@
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-router": "^2.0.0-rc4",
+    "style-loader": "^0.13.0",
     "webpack": "^1.8.10",
     "webpack-dev-server": "^1.6.6"
   },
