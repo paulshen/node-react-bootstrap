@@ -1,4 +1,6 @@
 require('babel-loader');
+require('babel-preset-es2015');
+require('babel-preset-react');
 
 module.exports = {
   entry: {
@@ -17,7 +19,7 @@ module.exports = {
         loader: 'babel',
         exclude: /(node_modules|bower_components)/,
         query: {
-          stage: 0
+          presets: ['react', 'es2015']
         }
       },
       {test: require.resolve('react'), loader: 'expose?React' }

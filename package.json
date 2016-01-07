@@ -18,22 +18,21 @@
   },
   "dependencies": {
     "ejs": "1.x",
-    "express": "4.x",
-    "express-ejs-layouts": "0.3.x"
+    "express": "4.x"
   },
   "devDependencies": {
-    "babel-core": "^5.8.22",
-    "babel-loader": "^5.3.2",
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
     "exports-loader": "^0.6.2",
     "expose-loader": "^0.5.3",
     "gulp": "^3.9.0",
     "gulp-util": "^3.0.1",
-    "history": "^1.13.1",
     "jquery": "^2.1.4",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-router": "^1.0.2",
-    "scroll-behavior": "^0.3.0",
+    "react-router": "^2.0.0-rc4",
     "webpack": "^1.8.10",
     "webpack-dev-server": "^1.6.6"
   },

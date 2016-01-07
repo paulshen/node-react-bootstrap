@@ -1,20 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, DefaultRoute } from 'react-router';
+import { Router, Route, IndexRoute, DefaultRoute, browserHistory } from 'react-router';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 import useScroll from 'scroll-behavior/lib/useStandardScroll';
 
-var IndexPage = require('pages/IndexPage');
+import IndexPage from 'pages/IndexPage';
 
-var App = React.createClass({
-  render: function() {
+class App extends React.Component {
+  render() {
     return (
       <div>
         {this.props.children}
       </div>
     );
   }
-});
+}
 
 var Routes = (
   <Route path="/" component={App}>
@@ -24,10 +24,8 @@ var Routes = (
   </Route>
 );
 
-let history = useScroll(createBrowserHistory)();
-
 ReactDOM.render(
-  <Router routes={Routes} history={history} />,
+  <Router routes={Routes} history={browserHistory} />,
   document.getElementById('container')
 );
 

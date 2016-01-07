@@ -1,15 +1,11 @@
-var React = require('react');
-var SampleComponent = require('components/SampleComponent');
+import React from 'react';
 
-var IndexPage = React.createClass({
-  render: function() {
+export default class IndexPage extends React.Component {
+  render() {
     return (
       <div>
-        <SampleComponent />
         <div>kombucha!</div>
       </div>
     );
   }
-});
-
-module.exports = IndexPage;
+}
