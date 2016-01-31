@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, DefaultRoute, browserHistory } from 'react-router';
-import createBrowserHistory from 'history/lib/createBrowserHistory';
-import useScroll from 'scroll-behavior/lib/useStandardScroll';
 
 import IndexPage from 'pages/IndexPage';
 
