@@ -5,6 +5,10 @@ require('babel-preset-react');
 require('css-loader');
 require('style-loader');
 require('autoprefixer-loader');
+require('exports-loader');
+require('imports-loader');
+require('whatwg-fetch');
+var webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -30,6 +34,11 @@ module.exports = {
       {test: require.resolve('react'), loader: 'expose?React' }
     ]
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+    }),
+  ],
   resolve: {
     alias: {
     },
