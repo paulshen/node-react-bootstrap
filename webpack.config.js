@@ -5,7 +5,7 @@ require('babel-preset-react');
 require('babel-preset-stage-1');
 require('css-loader');
 require('style-loader');
-require('autoprefixer-loader');
+require('postcss-loader');
 require('exports-loader');
 require('imports-loader');
 require('whatwg-fetch');
