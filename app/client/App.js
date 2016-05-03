@@ -1,8 +1,9 @@
+/* @flow */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, DefaultRoute, browserHistory } from 'react-router';
 
-import IndexPage from 'pages/IndexPage';
+import IndexPage from 'pages/IndexPage.js';
 
 class App extends React.Component {
   render() {

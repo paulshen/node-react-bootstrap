@@ -1,0 +1,15 @@
+[ignore]
+.*node_modules/babel.*
+.*node_modules/fbjs.*
+
+[include]
+../../node_modules/
+
+[libs]
+decls
+
+[options]
+module.name_mapper='^\([^.]\)' -> '<PROJECT_ROOT>/\1'
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnoreIssue
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
